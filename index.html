@@ -6,8 +6,11 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
 	<style>
+		/* background-image: -webkit-image-set(url('../img/image-1x.jpg') 1x, url('../img/image-2x.jpg') 2x); */
+
+
 		.time {display:inline-block;margin-left:7px;font-size:0;line-height:0;vertical-align:text-bottom; height: 20px;position:relative;top:1px;*display:inline;zoom:1;}
-		.time span {float:left;margin:0 1px;height:16px;background:url(img/time-sprite.jpg) no-repeat;text-indent:-9999em;background-position-y:0}
+		.time span {float:left;margin:0 1px;height:16px;background-image:-webkit-image-set(url('img/time-sprite.jpg') 1x, url('img/time-sprite@2x.jpg') 2x);background-repeat:no-repeat;text-indent:-9999em;background-position-y:0}
 		.time .time0 {width:12px;background-position-x:0} 
 		.time .time1 {width:11px;background-position-x:-23px} 
 		.time .time2 {width:11px;background-position-x:-45px} 
@@ -18,12 +21,12 @@
 		.time .time7 {width:11px;background-position-x:-155px} 
 		.time .time8 {width:11px;background-position-x:-177px} 
 		.time .time9 {width:12px;background-position-x:-199px}
-		.time .colon {margin-top:4px;width:3px;height:11px;background:url(img/deco-colon.png) no-repeat}
+		.time .colon {margin-top:4px;width:3px;height:11px;background-image:-webkit-image=set(url('img/deco-colon.png') 1x, url('img/deco=colon@2x.png') 2x);background-repeat:no-repeat}
 
-		@media (-webkit-min-device-pixel-ratio: 2) { 
+		/* @media (-webkit-min-device-pixel-ratio: 2) { 
 			.time span {background:url(img/time-sprite@2x.jpg) no-repeat;background-size:211px 16px}
 			.time .colon {background:url(img/deco-colon@2x.png) no-repeat;background-size:3px 11px}
-		}
+		} */
 
 	</style>
 </head>
