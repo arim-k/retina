@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		.time {display:inline-block;margin-left:7px;font-size:0;line-height:0;vertical-align:text-bottom; height: 20px;position:relative;top:1px;*display:inline;zoom:1;}
+		.time span {float:left;margin:0 1px;height:16px;background:url(img/time-sprite.jpg) no-repeat;text-indent:-9999em;background-position-y:0}
+		.time .time0 {width:12px;background-position-x:0} 
+		.time .time1 {width:11px;background-position-x:-23px} 
+		.time .time2 {width:11px;background-position-x:-45px} 
+		.time .time3 {width:10px;background-position-x:-67px} 
+		.time .time4 {width:12px;background-position-x:-88px} 
+		.time .time5 {width:12px;background-position-x:-111px} 
+		.time .time6 {width:11px;background-position-x:-133px}
+		.time .time7 {width:11px;background-position-x:-155px} 
+		.time .time8 {width:11px;background-position-x:-177px} 
+		.time .time9 {width:12px;background-position-x:-199px}
+		.time .colon {margin-top:4px;width:3px;height:11px;background:url(img/deco-colon.png) no-repeat}
+
+		@media (-webkit-min-device-pixel-ratio: 2) { 
+			.time span {background:url(img/time-sprite@2x.jpg) no-repeat;background-size:211px 16px}
+			.time .colon {background:url(img/deco-colon@2x.png) no-repeat;background-size:3px 11px}
+		}
+
+	</style>
+</head>
+<body>
+		<div class="time">
+			<span class="time0">0</span>
+			<span class="time1">1</span>
+			<span class="time2">2</span>
+			<span class="colon"></span>
+			<span class="time3">3</span>
+			<span class="time4">4</span>
+			<span class="colon"></span>
+			<span class="time5">5</span>
+			<span class="time6">6</span>
+			<span class="time7">7</span>
+			<span class="time8">8</span>
+			<span class="time9">9</span>
+		</div>
+</body>
+
+</html>
